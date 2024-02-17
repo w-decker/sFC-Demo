@@ -1,9 +1,6 @@
-import os
 import numpy as np
-import matplotlib.pyplot as plt
 from collections import Counter
 from dataclasses import dataclass
-from typing import Dict
 
 def get_voxel_pairs(data: np.ndarray, n_corrs: int) -> list[tuple] | Counter:
     """Get voxel pairs
