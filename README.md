@@ -6,7 +6,7 @@ This repository includes code to calculate static functional connectivity (sFC) 
 
 [`main.ipynb`](/main.ipynb) - Step-by-step deployment of code.
 
-[`utils.py`](/utils.py) - Utilities needed for sFC execution. Includes custom built functionality in the form of `FuncData`, a class to create two-dimensional data with embedded correlations of one's choice. Also contains functions for data I/O.
+[`environment.yml`](/environment.yml) - Conda environment.
 
 ## Dependencies
 
@@ -14,20 +14,39 @@ This code relies on the `nilearn.connectome` submodule. Installation and/or usag
 
 ## Using this repo
 
-A conda environment, `sfc-demo`, has been created specifically for this repository.
-
-To use this repository, first clone it.
+A "package" has been built specifically for this analysis demonstration. To get the package to use this notebook, first clone this entire repository.
 
 ```bash
 git clone https://github.com/w-decker/sFC-Demo.git
-cd sFC-Demo
+cd sFC-Demo/sfc-demo
 ```
 
-Next, activate the conda environment.
+Install the package.
+
+```bash
+pip install .
+```
+
+You can now import the functionality to any future code.
+
+```py
+from sfc-demo.simulate improt FuncData
+```
+
+A conda environment, `sfc-demo`, has also been created specifically for this repository. To activate it, execute the code below.
 
 ```bash
 conda create -f environment.yml
 conda activate sfc-demo
+```
+> You must be in the root directory of this repository.
+
+## Only getting the "package"
+
+If you only want to access the package, `sfc-demo`, then execute the following code.
+
+```bash
+pip install git+https://github.com/w-decker/sFC-Demo.git@main#subdirectory=sfc-demo
 ```
 
 
