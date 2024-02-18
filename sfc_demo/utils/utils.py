@@ -64,7 +64,7 @@ def data_io(data: str):
     """
 
     # check is someone needs help
-    if data is 'help':
+    if data == 'help':
         print(f"Data category:\t'corresponding argument'")
         print('----------------------------------------')
         print(f"Nilearn:\t'nilearn'")
@@ -73,10 +73,10 @@ def data_io(data: str):
         print(f"Sherlock:\t'sherlock'")
         print(f'\t\tLoads sherlock dataset from Chen et al. (2017)')
         print()
-    elif data is 'nilearn':
+    elif data == 'nilearn':
         D = nilearn_io()
 
-    elif data is 'sherlock':
+    elif data == 'sherlock':
         D = sherlock_io()
 
     return D
