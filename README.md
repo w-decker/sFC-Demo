@@ -39,14 +39,14 @@ A conda environment, `sfc-demo`, has also been created specifically for this rep
 conda create -f environment.yml
 conda activate sfc-demo
 ```
-> You must be in the root directory of this repository.
+> You must be in the root directory of this repository to activate the conda environment.
 
 ## Only getting the "package"
 
 If you only want to access the package, `sfc-demo`, then execute the following code.
 
 ```bash
-pip install git+https://github.com/w-decker/sFC-Demo.git@main#subdirectory=sfc-demo
+pip install git+https://github.com/w-decker/sFC-Demo.git@main#subdirectory=sfc_demo
 ```
 
 
