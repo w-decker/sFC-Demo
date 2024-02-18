@@ -14,7 +14,7 @@ def nilearn_io():
     """
 
     # get data
-    D = fetch_development_fmri(n_subjects=10, age_group='adults', verbose=True)
+    D = fetch_development_fmri(n_subjects=10, age_group='adult', verbose=True)
 
     return D
 
