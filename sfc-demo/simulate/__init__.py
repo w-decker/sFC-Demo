@@ -1,0 +1,1 @@
+from .funcdata import FuncData
