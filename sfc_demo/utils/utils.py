@@ -73,6 +73,7 @@ def data_io(data: str):
         print(f"Sherlock:\t'sherlock'")
         print(f'\t\tLoads sherlock dataset from Chen et al. (2017)')
         print()
+        D = None
     elif data == 'nilearn':
         D = nilearn_io()
 
